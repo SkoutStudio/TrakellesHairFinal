@@ -47,13 +47,13 @@ export const Services: React.FC<ServicesProps> = ({ lang }) => {
           <div className="barber-spotlight-card">
             <div className="spotlight-image-wrapper">
               <img
-                src="/Images/Nik.JPG"
+                src="/images/nik.jpg"
                 alt="Νίκος - Barbering &amp; Styling"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   if (!target.dataset.triedFallback) {
                     target.dataset.triedFallback = 'true';
-                    target.src = '/Images/NikAnnBride.JPG';
+                    target.src = '/images/nikannbride.jpg';
                   }
                 }}
               />
