@@ -49,11 +49,20 @@ export const Services: React.FC<ServicesProps> = ({ lang }) => {
               <img
                 src="/images/nik.jpg"
                 alt="Νίκος - Barbering &amp; Styling"
+                loading="eager"
+                decoding="async"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  if (!target.dataset.triedFallback) {
-                    target.dataset.triedFallback = 'true';
+                  const srcHistory = target.dataset.tried || '';
+                  if (!srcHistory.includes('Nik.JPG')) {
+                    target.dataset.tried = srcHistory + '|Nik.JPG';
+                    target.src = '/images/Nik.JPG';
+                  } else if (!srcHistory.includes('nikannbride.jpg')) {
+                    target.dataset.tried = srcHistory + '|nikannbride.jpg';
                     target.src = '/images/nikannbride.jpg';
+                  } else if (!srcHistory.includes('NikAnnBride.JPG')) {
+                    target.dataset.tried = srcHistory + '|NikAnnBride.JPG';
+                    target.src = '/images/NikAnnBride.JPG';
                   }
                 }}
               />

@@ -26,11 +26,20 @@ export const Education: React.FC<EducationProps> = ({ lang }) => {
           <img
             src="/images/nikanncert.png"
             alt="Νίκος & Άννα - Πιστοποιήσεις & Σεμινάρια"
+            loading="eager"
+            decoding="async"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              if (!target.dataset.triedFallback) {
-                target.dataset.triedFallback = 'true';
+              const srcHistory = target.dataset.tried || '';
+              if (!srcHistory.includes('NikAnnCert.png')) {
+                target.dataset.tried = srcHistory + '|NikAnnCert.png';
+                target.src = '/images/NikAnnCert.png';
+              } else if (!srcHistory.includes('nikannbride.jpg')) {
+                target.dataset.tried = srcHistory + '|nikannbride.jpg';
                 target.src = '/images/nikannbride.jpg';
+              } else if (!srcHistory.includes('NikAnnBride.JPG')) {
+                target.dataset.tried = srcHistory + '|NikAnnBride.JPG';
+                target.src = '/images/NikAnnBride.JPG';
               }
             }}
           />

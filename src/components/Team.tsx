@@ -20,7 +20,26 @@ export const Team: React.FC<TeamProps> = ({ lang }) => {
       <div className="team-grid">
         <article className="team-card reveal active">
           <div className="portrait">
-            <img src="/images/nikannbride.jpg" alt="Νίκος και Άννα - Trakelles Hair" />
+            <img
+              src="/images/nikannbride.jpg"
+              alt="Νίκος και Άννα - Trakelles Hair"
+              loading="eager"
+              decoding="async"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                const srcHistory = target.dataset.tried || '';
+                if (!srcHistory.includes('NikAnnBride.JPG')) {
+                  target.dataset.tried = srcHistory + '|NikAnnBride.JPG';
+                  target.src = '/images/NikAnnBride.JPG';
+                } else if (!srcHistory.includes('nik.jpg')) {
+                  target.dataset.tried = srcHistory + '|nik.jpg';
+                  target.src = '/images/nik.jpg';
+                } else if (!srcHistory.includes('Nik.JPG')) {
+                  target.dataset.tried = srcHistory + '|Nik.JPG';
+                  target.src = '/images/Nik.JPG';
+                }
+              }}
+            />
           </div>
 
           <div className="team-text">
