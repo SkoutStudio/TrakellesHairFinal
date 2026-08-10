@@ -24,13 +24,13 @@ export const Education: React.FC<EducationProps> = ({ lang }) => {
       <div className="education-card reveal active">
         <div className="education-image-container">
           <img
-            src="/Images/NikAnnCert.png"
+            src="/images/NikAnnCert.png"
             alt="Νίκος & Άννα - Πιστοποιήσεις & Σεμινάρια"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               if (!target.dataset.triedFallback) {
                 target.dataset.triedFallback = 'true';
-                target.src = '/Images/NikAnnBride.JPG';
+                target.src = '/images/NikAnnBride.JPG';
               }
             }}
           />

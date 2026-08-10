@@ -20,7 +20,7 @@ export const Team: React.FC<TeamProps> = ({ lang }) => {
       <div className="team-grid">
         <article className="team-card reveal active">
           <div className="portrait">
-            <img src="/Images/NikAnnBride.JPG" alt="Νίκος και Άννα - Trakelles Hair" />
+            <img src="/images/NikAnnBride.JPG" alt="Νίκος και Άννα - Trakelles Hair" />
           </div>
 
           <div className="team-text">
