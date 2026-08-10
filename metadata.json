@@ -1,0 +1,8 @@
+{
+  "name": "Trakelles Hair",
+  "description": "Trakelles Hair στη Λέσβο. Premium κομμωτήριο με ανδρικές και γυναικείες περιποιήσεις, video gallery, 3 καταστήματα και τηλεφωνικά ραντεβού.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
