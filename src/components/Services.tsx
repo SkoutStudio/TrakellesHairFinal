@@ -11,13 +11,13 @@ export const Services: React.FC<ServicesProps> = ({ lang }) => {
   const t = translations[lang];
 
   const menServices = [
-    t.men1, t.men2, t.men3, t.men4, t.men5, t.men6
+    t.men1, t.men2, t.men3, t.men4, t.men5, t.men6, t.men7, t.men8
   ];
 
   const womenServices = [
     t.women1, t.women2, t.women3, t.women4, t.women5,
     t.women11, t.women12, t.women13, t.women6, t.women7,
-    t.women8, t.women9, t.women14, t.women10
+    t.women8, t.women9, t.women14, t.women10, t.women15, t.women16
   ];
 
   return (

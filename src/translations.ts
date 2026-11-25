@@ -26,6 +26,8 @@ export const translations: Record<Language, Record<string, string>> = {
     men4: '👦 Παιδικό Κούρεμα',
     men5: '⚡ Hair Design / Σχέδια',
     men6: '👀 Βγάλσιμο / Σχηματισμός Φρυδιών',
+    men7: '💅 Μανικιούρ / Πεντικιούρ',
+    men8: '🧖 Σπα Μαλλιών',
 
     // Women's Services
     women1: '💇‍♀️ Γυναικείο Κούρεμα',
@@ -42,6 +44,8 @@ export const translations: Record<Language, Record<string, string>> = {
     women9: '👰 Χτένισμα Γάμου',
     women14: '💃 Χτενίσματα Κοινωνικών Εκδηλώσεων',
     women10: '👁️ Βγάλσιμο / Σχηματισμός Φρυδιών',
+    women15: '💅 Μανικιούρ / Πεντικιούρ',
+    women16: '🧖‍♀️ Σπα Μαλλιών',
 
     teamTitle: 'Οι άνθρωποι πίσω από το στυλ σου',
     teamText: '',
@@ -134,6 +138,8 @@ export const translations: Record<Language, Record<string, string>> = {
     men4: '👦 Kids Haircut',
     men5: '⚡ Hair Design',
     men6: '👀 Eyebrow Shaping',
+    men7: '💅 Manicure / Pedicure',
+    men8: '🧖 Hair Spa',
 
     // Women's Services
     women1: '💇‍♀️ Women’s Haircut',
@@ -150,6 +156,8 @@ export const translations: Record<Language, Record<string, string>> = {
     women9: '👰 Bridal Hairstyling',
     women14: '💃 Social Event Hairstyling',
     women10: '👁️ Eyebrow Shaping',
+    women15: '💅 Manicure / Pedicure',
+    women16: '🧖‍♀️ Hair Spa',
 
     teamTitle: 'The people behind your style',
     teamText: 'The Trakelles Hair team combines technique, experience and personal care.',
